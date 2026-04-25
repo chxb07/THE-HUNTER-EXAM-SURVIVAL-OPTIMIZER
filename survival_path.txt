@@ -1,5 +1,6 @@
-Phase 1: Conserve | Energy: 90
-Phase 2: Exert | Energy: 67
-Phase 3: Conserve | Energy: 55
+Phase 1: Exert | Rank: 31 | Energy: 88.0
+Phase 2: Exert | Rank: 23 | Energy: 73.6
+Phase 3: Exert | Rank: 20 | Energy: 61.6
+Phase 4: Exert | Rank: 21 | Energy: 47.2
 
-Survival Probability: 0.72
+Survival Probability: 1.0
