@@ -1,0 +1,24 @@
+STRATEGY DOCUMENT
+====================
+1. Modeling Approach:
+   - Phase simulation uses weighted stat matching with alliance multipliers and energy decay.
+   - Trust is modeled as a noisy symmetric matrix. Estimates update implicitly via alliance success.
+   - Wildcards use Gaussian variance on base stats. Ringers apply a hidden performance tax.
+
+2. Optimization Algorithm:
+   - Multi-attribute scoring for alliance selection: Trust (40%) + Complementarity (30%) + Energy Sync (30%).
+   - Counter-cyclical energy stance: Conserve when group avg < 50, exert when > 75 & phase cost high.
+   - Final phase hard-lock to "conserve" to satisfy endgame freshness constraint.
+
+3. Trust Uncertainty Handling:
+   - Bayesian prior with Gaussian noise (σ=0.15). Alliances only formed if est_trust > 0.5.
+   - Mirror property enforced: Trust is bidirectional but hidden until interaction.
+
+4. Wildcard & Ringer Detection:
+   - Wildcards flagged via Coefficient of Variation > 0.35 across phase scores.
+   - Ringers flagged when true performance < 75% of public stat expectation over multiple phases.
+
+5. Edge Cases:
+   - Zero-energy applicants: Forced conserve, high elimination probability.
+   - Ringer betrayal: Mitigated by capping alliances at 3 and weighting complementarity over raw power.
+   - Early elimination: Engine adapts by switching to solo conservation strategy if group density drops.
