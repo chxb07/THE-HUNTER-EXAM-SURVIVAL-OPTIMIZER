@@ -1,6 +1,0 @@
-[
-  {"weights": {"speed": 0.4, "strength": 0.3, "intelligence": 0.3}, "elimination_rate": 0.2, "energy_cost": 10},
-  {"weights": {"strength": 0.5, "nen": 0.5}, "elimination_rate": 0.25, "energy_cost": 12},
-  {"weights": {"intelligence": 0.5, "teamwork": 0.5}, "elimination_rate": 0.3, "energy_cost": 10},
-  {"weights": {"speed": 0.3, "nen": 0.4, "teamwork": 0.3}, "elimination_rate": 0.25, "energy_cost": 12}
-]
