@@ -1,0 +1,5 @@
+Phase 1: Conserve | Energy: 90
+Phase 2: Exert | Energy: 67
+Phase 3: Conserve | Energy: 55
+
+Survival Probability: 0.72

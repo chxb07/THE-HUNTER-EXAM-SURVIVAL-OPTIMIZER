@@ -1,0 +1,5 @@
+[
+  {"id": 0, "stats": {"speed": 6, "strength": 5, "intelligence": 7, "nen": 6, "teamwork": 5}, "energy": 100},
+  {"id": 1, "stats": {"speed": 5, "strength": 6, "intelligence": 5, "nen": 4, "teamwork": 6}, "energy": 100, "wildcard": true},
+  {"id": 2, "stats": {"speed": 7, "strength": 7, "intelligence": 6, "nen": 7, "teamwork": 4}, "energy": 100, "ringer": true}
+]
